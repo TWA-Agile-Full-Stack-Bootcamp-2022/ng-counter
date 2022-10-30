@@ -24,3 +24,19 @@
 
 ### how to create a new component
 - `ng generate component counter`
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Working on VScode, add .vscode/.settings.json
+```json
+{
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true, 
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file", 
+  "files.autoSave": "onFocusChange",
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  }
+}
+```
