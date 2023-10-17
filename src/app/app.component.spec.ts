@@ -46,4 +46,12 @@ describe('AppComponent', () => {
     expect(app.count).toEqual(-1);
   });
 
+  it('should hide - button when count < 0', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    app.count = -1;
+
+    expect(app.hideDecrease).toEqual(true);
+  });
+
 });

@@ -16,4 +16,8 @@ export class AppComponent {
   onDecrease(): void {
     this.count--;
   }
+
+  get hideDecrease(): boolean {
+    return this.count < 0;
+  }
 }
