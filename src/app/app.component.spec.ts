@@ -72,4 +72,12 @@ describe('AppComponent', () => {
 
   });
 
+  it('should set text background to red when count > 10', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    app.count = 11;
+
+    expect(app.textBackground).toEqual('red');
+  });
+
 });
