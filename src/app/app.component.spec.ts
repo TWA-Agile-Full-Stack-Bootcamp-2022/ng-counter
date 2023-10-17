@@ -63,4 +63,13 @@ describe('AppComponent', () => {
     expect(app.hideIncrease).toEqual(true);
   });
 
+  it('should set text background to green when count < 0', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    app.count = -1;
+
+    expect(app.textBackground).toEqual('green');
+
+  });
+
 });

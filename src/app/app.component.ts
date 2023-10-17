@@ -24,4 +24,11 @@ export class AppComponent {
   get hideIncrease(): boolean {
     return this.count > 10;
   }
+
+  get textBackground(): string {
+    if (this.count < 0) {
+      return 'green';
+    }
+    return '';
+  }
 }
