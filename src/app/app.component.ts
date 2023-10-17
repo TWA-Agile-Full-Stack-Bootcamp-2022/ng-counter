@@ -32,6 +32,6 @@ export class AppComponent {
     if (this.count > 10) {
       return 'red';
     }
-    return '';
+    return 'white';
   }
 }

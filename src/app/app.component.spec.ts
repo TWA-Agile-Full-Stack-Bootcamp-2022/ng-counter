@@ -80,4 +80,12 @@ describe('AppComponent', () => {
     expect(app.textBackground).toEqual('red');
   });
 
+  it('should set text background to white when count is between 0 and 10', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    app.count = 5;
+
+    expect(app.textBackground).toEqual('white');
+  });
+
 });
