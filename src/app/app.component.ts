@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ng-counter';
+
+  count = 0;
+
+  onIncrease(): void {
+    this.count++;
+  }
 }
