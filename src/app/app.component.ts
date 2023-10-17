@@ -20,4 +20,8 @@ export class AppComponent {
   get hideDecrease(): boolean {
     return this.count < 0;
   }
+
+  get hideIncrease(): boolean {
+    return this.count > 10;
+  }
 }

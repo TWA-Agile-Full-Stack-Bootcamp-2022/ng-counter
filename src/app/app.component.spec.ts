@@ -22,6 +22,7 @@ describe('AppComponent', () => {
     // DEMO for test from UI
     const fixture = TestBed.createComponent(AppComponent);
     const element = fixture.debugElement;
+    fixture.detectChanges();
     element.query(By.css('button')).triggerEventHandler('click', null);
     fixture.detectChanges();
 
@@ -52,6 +53,14 @@ describe('AppComponent', () => {
     app.count = -1;
 
     expect(app.hideDecrease).toEqual(true);
+  });
+
+  it('should hide + button when count > 10', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    app.count = 11;
+
+    expect(app.hideIncrease).toEqual(true);
   });
 
 });
