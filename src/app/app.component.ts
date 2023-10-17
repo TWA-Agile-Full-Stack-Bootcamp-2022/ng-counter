@@ -12,4 +12,8 @@ export class AppComponent {
   onIncrease(): void {
     this.count++;
   }
+
+  onDecrease(): void {
+    this.count--;
+  }
 }

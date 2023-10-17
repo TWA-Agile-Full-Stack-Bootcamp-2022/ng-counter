@@ -38,4 +38,12 @@ describe('AppComponent', () => {
     expect(app.count).toEqual(1);
   });
 
+  it('should decrease count when click the - button', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    app.onDecrease();
+
+    expect(app.count).toEqual(-1);
+  });
+
 });
