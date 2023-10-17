@@ -88,4 +88,12 @@ describe('AppComponent', () => {
     expect(app.textBackground).toEqual('white');
   });
 
+  it('should reset count to 0 when click the reset button', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    app.count = 5;
+    app.onReset();
+
+    expect(app.count).toEqual(0);
+  });
 });
